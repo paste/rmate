@@ -8,8 +8,9 @@ require 'optparse'
 require 'socket'
 require 'tempfile'
 require 'yaml'
+require 'rmate'
 
-VERSION_STRING = 'rmate version 1.4 (2012-08-14)'
+VERSION_STRING = 'rmate version %s (2012-08-14)' % Rmate::VERSION
 
 class Settings
   attr_accessor :host, :port, :wait, :force, :verbose
